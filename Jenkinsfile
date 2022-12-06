@@ -13,13 +13,14 @@ pipeline {
         stage("Test") {
             steps {
                 echo("Hello Test")
+		sh("failure")
             }
         }
-		stage("Deploy") {
-           steps {
+	stage("Deploy") {
+            steps {
                 echo("Hello Deploy")
            }
-		}
+	}
     }
     post {
         always {
