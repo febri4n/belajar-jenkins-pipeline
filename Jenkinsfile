@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo("Start Test")
 		sh("./mvnw test")
-		echo("Finish Test)
+		echo("Finish Test")
             }
         }
 	stage("Deploy") {
