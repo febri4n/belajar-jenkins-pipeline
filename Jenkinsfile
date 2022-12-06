@@ -22,7 +22,7 @@ pipeline {
 	    echo "Oh no, failure"
 	}
 	cleanup {
-	    echo "Don't cate success or error"
+	    echo "Don't care success or error"
 	}
     }
 }
